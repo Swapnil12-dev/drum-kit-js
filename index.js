@@ -1,5 +1,6 @@
 var drums = document.querySelectorAll(".drum");
 
+
 for (var i = 0; i < drums.length; i++) {
     drums[i].addEventListener("click", function () {
 
@@ -112,9 +113,14 @@ function flash(click) {
 
     buttonClicked.classList.add("pressed");
 
+        setTimeout(function(){
+        buttonClicked.classList.remove("pressed")
+    },100);
+
 
 
 }
+
 
 
 
